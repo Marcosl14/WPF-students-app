@@ -1,0 +1,38 @@
+﻿<Window x:Class="_99_Listado_Alumnos.EditarAlumno"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_99_Listado_Alumnos"
+        mc:Ignorable="d"
+        Title="EditarAlumno" Height="350" Width="300" MinHeight="350" MinWidth="300">
+
+    
+    <Border BorderBrush="Black" BorderThickness="1" Margin="5">
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Margin="5">
+            <TextBlock Text="Editar Alumno" Margin="5,5,5,15"/>
+            <StackPanel Orientation="Horizontal" Margin="5,5,5,15">
+                <TextBlock Text="Nombre" Width="100"/>
+                <TextBox x:Name="editarNombre" Width="150"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5,5,5,15">
+                <TextBlock Text="Apellido" Width="100"/>
+                <TextBox x:Name="editarApellido" Width="150"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5,5,5,15">
+                <TextBlock Text="DNI" Width="100"/>
+                <TextBox x:Name="editarDNI" Width="150"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5,5,5,15">
+                <TextBlock Text="Legajo" Width="100"/>
+                <TextBox x:Name="editarLegajo" Width="150"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="5,5,5,15">
+                <TextBlock Text="Ciudad" Width="100"/>
+                <TextBox x:Name="editarCiudad" Width="150"/>
+            </StackPanel>
+            <Button x:Name="editarAlumno" Content="Guardar Modificaciones Alumno" Click="editarAlumno_Click" Margin="0,0,5,15"/>
+            <Button x:Name="eliminarAlumno" Content="Eliminar Alumno" Click="eliminarAlumno_Click" Margin="0,0,5,15"/>
+        </StackPanel>
+    </Border>
+</Window>
